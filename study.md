@@ -4,9 +4,10 @@ In this study we are going to to ino the differences between Ruby and Python.
 
 ## Required Readings
 
--   [Example Reading](https://www.github.com/ga-wdi-boston/example)
--   [Example Reading](https://www.github.com/ga-wdi-boston/example)
--   [Example Reading](https://www.github.com/ga-wdi-boston/example)
+-   [Code School: Try Python](https://www.codeschool.com/learn/python)
+-   [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
+    Exercises: 13, 18, 21, 30, 32, 34, 39, 42, 44
+    All exercises are quite short
 
 ## Variable Declaration
 
@@ -92,8 +93,97 @@ print "That's alot of cats"
 
 ## Basic Syntax
 
-You may have noticed from a few of the examples that 
+You may have noticed from a few of the examples that Python is very similar to
+Ruby, however a key difference is syntax *** WHITE SPACE MATTERS***
 
-```md
-<!-- your answer here -->
+In Ruby we closed blocks with the `end` keyword:
+
+```ruby
+def foo
+  #some code
+end
 ```
+
+In Python as we open blocks we have to indent:
+
+```py
+def foo(x):
+  print x
+  if x > 0:
+    return x
+  elif x == 1:
+    return x-1
+  else:
+    return x+1
+
+def bar:
+  print "Hello"
+```
+
+Please note:
+
+-   The use of a semicolon when declaring functions
+-   The clean indentation (Python will throw in error if you do not use correct
+    indentation)
+-   Properly declaring same level functions
+
+In Ruby poor indentation is a sign of poor code quality, however in Python poor
+indentation will throw an error.  ***BE VIGILANT WITH YOUR INDENTATION***
+
+## Strings
+
+In Ruby for string interpolation we did something like
+
+```ruby
+cat = "Mr.Kitty"
+
+puts "#{cat} is actually quite dumb"
+# => "Mr.Kitty is actually quite dumb"
+```
+
+For Python there are two ways to do this, in Python 3.5 this is the prefered way
+
+```py
+title = "Mr"
+name = "Kitty"
+string ="{}.{}".format(title,name)
+print(string)
+# => "Mr.Kitty"
+```
+
+In earlier versions of Pyton this was the prefered way, but it is still used
+frequently
+
+```py
+title = "Mr"
+name = "Kitty"
+"%s.%s"%(title,name)
+# => "Mr.Kitty"
+```
+
+Here are some commonly used argument specifiers
+
+```bash
+%s - String (or any object with a string representation, like numbers)
+%d - Integers
+%f - Floating point numbers
+```
+
+## Installing packages
+
+Remember in Ruby how we used `gem install <Gemname>` well Python has something
+similar called `Pip`.
+
+In ruby we would run:
+
+```bash
+gem install cative_record
+```
+
+In Python we go about this by using
+
+```bash
+pip install cative_record
+```
+
+Booom you just installed a package!
