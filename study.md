@@ -11,18 +11,8 @@ In this study we are going to to ino the differences between Ruby and Python.
 
 ## Variable Declaration
 
-Similar to Ruby and different then Javascript, in Python we do not have to
-declare our variables with something like a `let` or `const`. Consider the
-following:
-
-```js
-// Javascript
-var kitty = "Mr.Kitty";
-var iAmTen = 10;
-
-console.log(kitty);
-// => "Mr.Kitty"
-```
+Similar to Ruby, in Python we ***DO NOT*** have to declare our variables with
+something like a `let` or `const`. Consider the following:
 
 ```ruby
 # Ruby
