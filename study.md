@@ -4,6 +4,9 @@ In this study we are going to to ino the differences between Ruby and Python.
 
 ## Required Readings
 
+Please Perform readings after reading this this page.  Follow along using a
+Python repl
+
 -   [Code School: Try Python](https://www.codeschool.com/learn/python)
 -   [Learn Python the Hard Way](http://learnpythonthehardway.org/book/)
     Exercises: 13, 18, 21, 30, 32, 34, 39, 42, 44
@@ -46,14 +49,14 @@ a,b = 3,4
 ## Lists (Kinda like arrays)
 
 It's important to note a list is not an array.  It looks like an array, acts
-like an array but an array in Pyton is a module that concerns itself with
-effiency.
+like an array but an array in Python is a module that concerns itself with
+efficiency.
 
 We'll stick with lists, they are similar to the array type we have used in
 both Javascript and Ruby.
 
 Take a look at how we make a list and append things in Python, it should look
-familar to how we did things in Ruby:
+familiar to how we did things in Ruby:
 
 ```py
  cat_list = []
@@ -72,13 +75,81 @@ cat_list = ["Mr.Kitty", "Dr.Fuzz", "Admiral Meow", "Meowbama"]
 for cat in cat_list:
     print cat
 
-print "That's alot of cats"
+print "That's a lot of cats"
 
 # => Mr.Kitty
 # => Dr.Fuzz
 # => Admiral Meow
 # => Meowbama
 # => That's alot of cats
+```
+
+## Dictionaries
+
+Dictionaries in Python are pretty similar to hashes in Ruby.  I say pretty
+similar because there are minor behavioral difference between the two, but for
+now we'll think of dictionaries and hashes as one in the same.
+
+First here is a Ruby hash:
+
+```ruby
+cat_hash = {'Jason' => 'Mr.Kitty', 'Lauren' => 'Admiral Meow', 'Antony' => 'Meowbama'}
+
+cat_hash['Jason']
+
+# => "Mr.Kitty"
+```
+
+And now be prepared to have your mind blown by a Python dictionary:
+
+```py
+cat_dict = {'Jason' : 'Mr.Kitty', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+
+cat_dict['Jason']
+
+# => "Mr.Kitty"
+```
+
+When you play around with hashes you may notice that the return dictionary may
+be in a different order then when you entered it.  This is one of those
+differences between Python dictionaries and Ruby hashes, order isn't guaranteed,
+but hey, its a dictionary if you're using it for order there is a better way.
+
+Adding key/value pairs to a dictionary is exactly the same in both Ruby and
+Python.
+
+```py
+cat_dict = {'Jason' : 'Mr.Kitty', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+
+cat_dict['Ross'] = "Dr.Fuzz"
+
+cat_dict
+# => cat_dict = {'Jason' : 'Mr.Kitty', 'Ross': 'Dr.Fuzz', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+```
+
+And let's delete Ross... Because Ross
+
+```py
+cat_dict = {'Jason' : 'Mr.Kitty', 'Ross': 'Dr.Fuzz', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+
+cat_dict.pop('Ross')
+# => 'Dr.Fuzz'
+```
+
+Now that Ross is gone let's print all of the values in our dictionary:
+
+```py
+pet_hash = {'Lauren': 'Admiral Meow', 'Antony': 'Meowbama', 'Jason': 'Mr.Kitty'}
+
+for key in pet_hash:
+	print(pet_hash[key])
+
+# The word "key" is arbitrary here, it could be "bob" or "foo" and it would
+# behave the same.
+
+# => Admiral Meow
+# => Mr.Kitty
+# => Meowbama
 ```
 
 ## Basic Syntax
@@ -141,7 +212,7 @@ print(string)
 # => "Mr.Kitty"
 ```
 
-In earlier versions of Pyton this was the prefered way, but it is still used
+In earlier versions of Python this was the prefered way, but it is still used
 frequently
 
 ```py
