@@ -17,7 +17,7 @@ something like a `let` or `const`. Consider the following:
 ```ruby
 # Ruby
 kitty = "Mr.Kitty"
-iAmTen = 10
+i_am_ten = 10
 
 puts kitty
 # => "Mr.Kitty"
@@ -27,7 +27,7 @@ Python is almost identical to Ruby in this manner.
 
 ```py
 kitty = "Mr.Kitty"
-iAmTen = 10
+i_am_ten = 10
 
 print kitty
 # => "Mr.Kitty"
