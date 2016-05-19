@@ -12,7 +12,8 @@ By the end of this, developers should be able to:
 
 -   Declare variables in Python
 -   Create lists
--   Write basic loops for created lists
+-   Create Dictionaries
+-   Write basic loops for created lists and dictionaries
 -   Create functions in Python using correct syntax
 -   Wrtie strings using Python in interpolation
 
