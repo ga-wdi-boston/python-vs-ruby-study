@@ -61,16 +61,16 @@ familiar to how we did things in Ruby:
 ```py
  cat_list = []
  cat_list.append("Mr.Kitty")
- cat_list.append("Dr.Fuzz")
+ cat_list.append("Meowbama")
  print cat_list
 
- # => ["Mr.Kitty", "Dr.Fuzz"]
+ # => ["Mr.Kitty", "Meowbama"]
 ```
 
 Lets take a look at looping through that list:
 
 ```py
-cat_list = ["Mr.Kitty", "Dr.Fuzz", "Admiral Meow", "Meowbama"]
+cat_list = ["Mr.Kitty", "Meowbama", "Cooper", "Manfred"]
 
 for cat in cat_list:
     print cat
@@ -78,9 +78,9 @@ for cat in cat_list:
 print "That's a lot of cats"
 
 # => Mr.Kitty
-# => Dr.Fuzz
-# => Admiral Meow
 # => Meowbama
+# => Cooper
+# => Manfred
 # => That's alot of cats
 ```
 
@@ -93,7 +93,7 @@ now we'll think of dictionaries and hashes as one in the same.
 First here is a Ruby hash:
 
 ```ruby
-cat_hash = {'Jason' => 'Mr.Kitty', 'Lauren' => 'Admiral Meow', 'Antony' => 'Meowbama'}
+cat_hash = {'Jason' => 'Mr.Kitty', 'Lauren' => 'Cooper', 'Antony' => 'Manfred'}
 
 cat_hash['Jason']
 
@@ -103,7 +103,7 @@ cat_hash['Jason']
 And now be prepared to have your mind blown by a Python dictionary:
 
 ```py
-cat_dict = {'Jason' : 'Mr.Kitty', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+cat_dict = {'Jason' : 'Mr.Kitty', 'Lauren' : 'Cooper', 'Antony' : 'Manfred'}
 
 cat_dict['Jason']
 
@@ -119,27 +119,27 @@ Adding key/value pairs to a dictionary is exactly the same in both Ruby and
 Python.
 
 ```py
-cat_dict = {'Jason' : 'Mr.Kitty', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+cat_dict = {'Jason' : 'Mr.Kitty', 'Lauren' : 'Cooper', 'Antony' : 'Manfred'}
 
-cat_dict['Ross'] = "Dr.Fuzz"
+cat_dict['Ross'] = "Meowbama"
 
 cat_dict
-# => cat_dict = {'Jason' : 'Mr.Kitty', 'Ross': 'Dr.Fuzz', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+# => cat_dict = {'Jason' : 'Mr.Kitty', 'Ross': 'Meowbama', 'Lauren' : 'Cooper', 'Antony' : 'Manfred'}
 ```
 
 And let's delete Ross... Because Ross
 
 ```py
-cat_dict = {'Jason' : 'Mr.Kitty', 'Ross': 'Dr.Fuzz', 'Lauren' : 'Admiral Meow', 'Antony' : 'Meowbama'}
+cat_dict = {'Jason' : 'Mr.Kitty', 'Ross': 'Meowbama', 'Lauren' : 'Cooper', 'Antony' : 'Manfred'}
 
 cat_dict.pop('Ross')
-# => 'Dr.Fuzz'
+# => 'Meowbama'
 ```
 
 Now that Ross is gone let's print all of the values in our dictionary:
 
 ```py
-pet_hash = {'Lauren': 'Admiral Meow', 'Antony': 'Meowbama', 'Jason': 'Mr.Kitty'}
+pet_hash = {'Lauren': 'Cooper', 'Antony': 'Manfred', 'Jason': 'Mr.Kitty'}
 
 for key in pet_hash:
 	print(pet_hash[key])
@@ -147,9 +147,9 @@ for key in pet_hash:
 # The word "key" is arbitrary here, it could be "bob" or "foo" and it would
 # behave the same.
 
-# => Admiral Meow
+# => Cooper
 # => Mr.Kitty
-# => Meowbama
+# => Manfred
 ```
 
 ## Basic Syntax
