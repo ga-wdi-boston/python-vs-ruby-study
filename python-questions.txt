@@ -1,0 +1,4 @@
+1. What are the most common 'gotchas' for Python besides white space and proper
+function indentation?
+
+2. What does 'Properly declaring same level functions' in study.md refer to?
