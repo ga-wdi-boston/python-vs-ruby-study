@@ -1,0 +1,10 @@
+In one of the videos, they were concatenating strings and had '1967' (or whatever) as a string, but then used the string method instead, saying they wanted to keep numbers as numbers.  Why?
+
+In
+
+# print some states
+print '-' * 10
+print "Michigan's abbreviation is: ", states['Michigan']
+print "Florida's abbreviation is: ", states['Florida']
+
+what does "print '-' * 10" mean?
